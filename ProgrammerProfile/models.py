@@ -7,10 +7,10 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 class Person(models.Model):
-        Name = models.ForeignKey(User)
+        Name = models.CharField(max_length=100)
         DOB = models.DateField()
         age = models.IntegerField()
         Description = models.TextField()
-        Profile_Picture = models.ImageField(upload_to="/static")
+        Profile_Picture = models.ImageField(upload_to="/uploaded_files/static")
 
 
