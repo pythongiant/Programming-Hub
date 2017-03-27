@@ -10,7 +10,7 @@ class Person(models.Model):
         DOB = models.DateField()
         age = models.IntegerField()
         Description = models.TextField()
-        Profile_Picture = models.FileField(upload_to="/")
+        Profile_Picture = models.FileField()
 
         def __str__(self):
                 return self.Name
