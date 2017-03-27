@@ -1,0 +1,13 @@
+#start{
+background-image:url("/static/lappy.jpg");
+width:100%;
+height:40%;
+background-align:center;
+position:relative;
+color:white;
+margin-top:-20px;
+display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
