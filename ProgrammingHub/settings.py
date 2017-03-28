@@ -55,7 +55,7 @@ ROOT_URLCONF = 'ProgrammingHub.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["/mnt/14B0B442B0B42C5C/My Programs/ProgrammingHub/templates"],
+        'DIRS': ["/mnt/14B0B442B0B42C5C/My Programs/Programming-Hub/templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -125,5 +125,5 @@ STATICFILES_DIRS = (
 
 )
 STATIC_URL = '/static/'
-MEDIA_ROOT="/mnt/14B0B442B0B42C5C/My Programs/ProgrammingHub/static/uploaded-files"
+MEDIA_ROOT="/mnt/14B0B442B0B42C5C/My Programs/Programming-Hub/static/uploaded-files"
 STATIC_ROOT="/static/"

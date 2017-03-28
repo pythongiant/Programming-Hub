@@ -7,7 +7,6 @@ from django.contrib.auth.models import User
 
 class Person(models.Model):
         Name = models.CharField(max_length=100)
-        DOB = models.DateField()
         age = models.IntegerField()
         Description = models.TextField()
         Profile_Picture = models.FileField()
