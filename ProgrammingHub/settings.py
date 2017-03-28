@@ -106,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
@@ -121,9 +121,9 @@ USE_TZ = True
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
-    os.path.join(BASE_DIR, "uploaded-files"),
+
 
 )
 STATIC_URL = '/static/'
-MEDIA_ROOT="/mnt/14B0B442B0B42C5C/My Programs/ProgrammingHub/uploaded-files"
+MEDIA_ROOT="/mnt/14B0B442B0B42C5C/My Programs/ProgrammingHub/static/uploaded-files"
 STATIC_ROOT="/static/"

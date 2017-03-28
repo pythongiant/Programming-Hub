@@ -20,4 +20,4 @@ class Language(models.Model):
     Language = models.CharField(max_length=100)
 
     def __str__(self):
-        return self.Language-self.user
+        return self.Language+"-"+str(self.user)
