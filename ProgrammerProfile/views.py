@@ -21,6 +21,8 @@ def SignUpAction(request):
             username = form.cleaned_data['Username']
             password = form.cleaned_data['Password']
             email = form.cleaned_data['Email']
+            language=form.cleaned_data['Languages']
+            description=form.cleaned_data['Description']
 
             user = User.objects.create_user(username, email, password)
 

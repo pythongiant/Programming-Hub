@@ -11,6 +11,6 @@ display: flex;
   justify-content: center;
   text-align: center;
 }
- input {
+input,textarea,select {
             display: block
         }
