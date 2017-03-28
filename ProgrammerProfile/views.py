@@ -29,5 +29,5 @@ def SignUpAction(request):
             Person.objects.create(Name=username,age=age,Description=description)
             for i in language:
                 Language.objects.create(user=user,Language=i)
-            print username.language_set.all()
+          
     return redirect("/")
