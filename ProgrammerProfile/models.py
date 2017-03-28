@@ -6,14 +6,12 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 class Person(models.Model):
-        Name = models.CharField(max_length=100)
-        age = models.IntegerField()
-        Description = models.TextField()
-        Profile_Picture = models.FileField()
+    Name = models.CharField(max_length=100)
+    age = models.IntegerField()
+    Description = models.TextField()
 
-        def __str__(self):
-                return self.Name
-
+    def __str__(self):
+        return self.Name
 class Language(models.Model):
     user = models.ForeignKey(User)
     Language = models.CharField(max_length=100)
