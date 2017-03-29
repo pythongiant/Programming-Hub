@@ -16,3 +16,10 @@ class Add(forms.Form):
         choices=OPTIONS,
     )
     Profile_Picture = forms.FileField(label="Your Profile Picture:")
+
+
+class Authenticate(forms.Form):
+    Username = forms.CharField(label="Username:", initial=" ")
+    Password = forms.CharField(widget=forms.PasswordInput(), initial="")
+
+
