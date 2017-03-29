@@ -16,7 +16,7 @@ def signup(request):
 
 def SignUpAction(request):
     if request.method == 'POST':
-        form = Add(request.POST)
+        form = Add(request.POST,request.FILES)
         if form.is_valid():
             username = form.cleaned_data['Username']
             password = form.cleaned_data['Password']
@@ -24,10 +24,12 @@ def SignUpAction(request):
             email = form.cleaned_data['Email']
             language = form.cleaned_data['Languages']
             description = form.cleaned_data['Description']
-
+            Profile_pic=form.cleaned_data["Profile_Picture"]
             user = User.objects.create_user(username, email, password)
-            Person.objects.create(Name=username,age=age,Description=description)
+            Person.objects.create(Name=username,age=age,Description=description,ProfilePic=Profile_pic)
             for i in language:
                 Language.objects.create(user=user,Language=i)
-          
+
+            print user.language_set.all()
+
     return redirect("/")

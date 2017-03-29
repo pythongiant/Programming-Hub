@@ -1,7 +1,7 @@
 {% extends "ProgrammerProfile/base.html" %}
 {% block content %}
 <center>
-    <form class="form-horizontal" action="{% url 'auth' %}" method="POST">
+    <form class="form-horizontal" enctype="multipart/form-data" action="{% url 'auth' %}" method="POST">
                 {% csrf_token %}
     {{form}}
 {{form.errors}}
