@@ -15,3 +15,4 @@ class Add(forms.Form):
         widget=forms.CheckboxSelectMultiple,
         choices=OPTIONS,
     )
+    Profile_Picture = forms.FileField(label="Your Profile Picture:")
