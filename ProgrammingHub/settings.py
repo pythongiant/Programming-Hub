@@ -124,6 +124,6 @@ STATICFILES_DIRS = (
 
 
 )
-STATIC_URL = '/static/'
-MEDIA_ROOT="/mnt/14B0B442B0B42C5C/My Programs/Programming-Hub/static/uploaded-files"
-STATIC_ROOT="/static/"
+STATIC_URL = BASE_DIR+'/static/'
+MEDIA_ROOT=BASE_DIR+"/static/uploaded-files"
+STATIC_ROOT=BASE_DIR+'/static/'
