@@ -28,7 +28,7 @@ def SignUpAction(request):
             user = User.objects.create_user(username, email, password)
             Person.objects.create(Name=username,age=age,Description=description,ProfilePic=Profile_pic)
             for i in language:
-                Language.objects.create(user=user,Language=i)
+                Language.objects.create(user=user,Lang=i)
             user=authenticate(username=username,password=password)
             login(request,user)
     return redirect("/home")
