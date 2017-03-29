@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f0e466e-5ba2-428f-99f9-7ab58afdf662" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/ProgrammerProfile/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/ProgrammerProfile/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProgrammerProfile/models.py" afterPath="$PROJECT_DIR$/ProgrammerProfile/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProgrammerProfile/urls.py" afterPath="$PROJECT_DIR$/ProgrammerProfile/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProgrammerProfile/views.py" afterPath="$PROJECT_DIR$/ProgrammerProfile/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/ProgrammerProfile/base.html" afterPath="$PROJECT_DIR$/templates/ProgrammerProfile/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/ProgrammerProfile/form.html" afterPath="$PROJECT_DIR$/templates/ProgrammerProfile/form.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/ProgrammerProfile/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="404">
+              <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -91,7 +84,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/ProgrammerProfile/detail.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="128">
@@ -127,10 +120,10 @@
         <option value="$PROJECT_DIR$/templates/ProgrammerProfile/form.html" />
         <option value="$PROJECT_DIR$/templates/ProgrammerProfile/home.html" />
         <option value="$PROJECT_DIR$/ProgrammerProfile/urls.py" />
-        <option value="$PROJECT_DIR$/templates/ProgrammerProfile/base.html" />
         <option value="$PROJECT_DIR$/ProgrammerProfile/views.py" />
         <option value="$PROJECT_DIR$/ProgrammerProfile/models.py" />
         <option value="$PROJECT_DIR$/templates/ProgrammerProfile/detail.html" />
+        <option value="$PROJECT_DIR$/templates/ProgrammerProfile/base.html" />
       </list>
     </option>
   </component>
@@ -470,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490761683638</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Manage">
+      <created>1490766888369</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1490766888369</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -818,6 +818,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -899,14 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ProgrammerProfile/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProgrammerProfile/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -921,6 +914,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ProgrammerProfile/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
           <folding />
         </state>
       </provider>
