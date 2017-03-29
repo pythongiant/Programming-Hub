@@ -25,7 +25,7 @@ SECRET_KEY = '2ngz_7^3&=ao12z&n-^!2ej9=##h5ofg_*(w@jh9^5^zke2tu1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['blooming-forest-46365.herokuapp.com']
+ALLOWED_HOSTS = ['blooming-forest-46365.herokuapp.com','programminghub.herokuapp.com/']
 
 
 # Application definition
