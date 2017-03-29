@@ -55,7 +55,7 @@ ROOT_URLCONF = 'ProgrammingHub.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["/mnt/14B0B442B0B42C5C/My Programs/Programming-Hub/templates"],
+        'DIRS': [BASE_DIR+"/templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
