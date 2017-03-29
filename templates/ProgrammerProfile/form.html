@@ -3,7 +3,7 @@
 <center>
     <form class="form-horizontal" enctype="multipart/form-data" action="{% url 'auth' %}" method="POST">
                 {% csrf_token %}
-    {{Login}}
+    {{form}}
 {{form.errors}}
 <button type="submit" value="submit">SUBMIT!</button>
 

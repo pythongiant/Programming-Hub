@@ -16,8 +16,8 @@ class Person(models.Model):
 
 
 class Language(models.Model):
-    user = models.ForeignKey(User)
-    Language = models.CharField(max_length=100)
+    user = models.CharField(max_length=100)
+    Lang = models.CharField(max_length=100)
 
     def __str__(self):
-        return self.Language+"-"+str(self.user)
+        return self.Lang+"-"+str(self.user)

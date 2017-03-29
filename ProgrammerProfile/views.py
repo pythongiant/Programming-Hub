@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect,get_object_or_404
 from django.contrib.auth.models import User #Import the User module
 from django.contrib.auth import authenticate,login,logout#import some more stuff
 from .forms import *
@@ -49,13 +49,28 @@ def log(request):
             user=authenticate(username=username,password=password)
             if user is not None:
                 login(request,user)
-                return redirect('/')
+                return redirect('/home')
             else:
-                return render(request,"ProgramerProfile/invalid.html",{})
+                return render(request,"ProgrammerProfile/invalid.html",{})
 
 
 def outlog(request):
    logout(request)
    return redirect("/")
 
+def home(request):
+    a = Person.objects.all()
+    context={
+        "everybody":a
+    }
+    return render(request, "ProgrammerProfile/home.html", context)
 
+
+def user_detail(request,user_id):
+    person = get_object_or_404(Person, pk=user_id)
+    language = Language.objects.filter(user=person.Name)
+    context={
+        "person" : person,
+        "language":language
+    }
+    return render(request,"ProgrammerProfile/detail.html",context)

@@ -1,0 +1,15 @@
+{% extends "ProgrammerProfile/base.html" %}
+{% block content %}
+<center>
+    <h3>{{person.Name}}</h3>
+    {%load static %}
+    <img src="{% static 'uploaded-files/'%}{{person.ProfilePic}}"/>
+    <h4>about {{person.Name}}:</h4>
+    <p>{{person.Description}}</p>
+    <h5>Languages {{person.Name}} codes in :</h5>
+    {% for i in language %}
+
+    <p>{{i.Lang}}</p>
+    {% endfor %}
+    </center>
+{% endblock %}
