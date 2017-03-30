@@ -127,16 +127,3 @@ STATICFILES_DIRS = (
 STATIC_URL = BASE_DIR+'/static/'
 MEDIA_ROOT=BASE_DIR+"/static/uploaded-files"
 STATIC_ROOT=BASE_DIR+'/static/'
-import dj_database_url
-DATABASES['default'] = dj_database_url.config()
-
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
-ALLOWED_HOSTS = ['*']
-
-DEBUG = False
-
-try:
-    from .local_settings import *
-except ImportError:
-    pass
