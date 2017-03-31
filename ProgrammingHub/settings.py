@@ -133,5 +133,5 @@ STATICFILES_DIRS = (
 
 )
 STATIC_URL = BASE_DIR+'app/static/'
-MEDIA_ROOT=BASE_DIR+"app/static/uploaded-files"
+MEDIA_ROOT=BASE_DIR+"/app/static/uploaded-files"
 STATIC_ROOT=BASE_DIR+'/app/static/'
