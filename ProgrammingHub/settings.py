@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,7 +26,7 @@ SECRET_KEY = '2ngz_7^3&=ao12z&n-^!2ej9=##h5ofg_*(w@jh9^5^zke2tu1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['blooming-forest-46365.herokuapp.com','programminghub.herokuapp.com']
+ALLOWED_HOSTS = ['blooming-forest-46365.herokuapp.com','programminghub.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -75,11 +76,10 @@ WSGI_APPLICATION = 'ProgrammingHub.wsgi.application'
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    'default': dj_database_url.config(default='postgres://miiqkabjuaptnb:efd0065d22ac0a5fb6986edc79713c2c2407f01fa831ab99bd2f741edd8cbd2a@ec2-54-83-205-71.compute-1.amazonaws.com:5432/da7532q878cimr'),
 }
+
+
 
 
 # Password validation
