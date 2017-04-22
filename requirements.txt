@@ -13,7 +13,7 @@ ipaddress==1.0.16
 lazy-object-proxy==1.2.2
 lockfile==0.12.2
 packaging==16.8
-pkg-resources==0.0.0
+
 psycopg2==2.7.1
 pyparsing==2.2.0
 six==1.10.0
