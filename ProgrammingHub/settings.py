@@ -76,10 +76,10 @@ WSGI_APPLICATION = 'ProgrammingHub.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
-DATABASES = {
+
   DATABASES = {
     'default': dj_database_url.config(default='postgres://miiqkabjuaptnb:efd0065d22ac0a5fb6986edc79713c2c2407f01fa831ab99bd2f741edd8cbd2a@ec2-54-83-205-71.compute-1.amazonaws.com:5432/da7532q878cimr'),
-}
+
 }
 
 
