@@ -1,6 +1,8 @@
 {% extends "ProgrammerProfile/base.html" %}
 {% block content %}
+
 {% for i in everybody %}
-<center><a href="{{i.id}}"><h2>{{i.Name}}</h2></a></center>
+{%load static%}
+<a href="/{{i.id}}"><img src="{%static '/uploaded-files/' %}{{i.ProfilePic}}"/><div class="nametag">{{i.Name}}<div id="about">{{i.Description}}</div></div></a>
 {% endfor %}
 {% endblock %}
