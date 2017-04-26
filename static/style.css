@@ -15,13 +15,15 @@ input,textarea,select {
             display: block
         }
 .nametag{
-
-	width: 80%;
-	padding:5px 5px;
-	float: right;
+width: 80%;
+padding:5px 5px;
+float: right;
 }   
 
 a{
 	text-decoration: none;
 
 }    
+#logo{
+	border-radius: 70px;
+}
