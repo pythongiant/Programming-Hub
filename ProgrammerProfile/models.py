@@ -13,11 +13,9 @@ class Person(models.Model):
 
     def __str__(self):
         return self.Name
-
-
-class Language(models.Model):
-    user = models.CharField(max_length=100)
-    Lang = models.CharField(max_length=100)
-
+class Posts(models.Model):
+    Name = models.CharField(max_length=1000000000000)        
+    post = models.TextField()
+    author = models.CharField(max_length=100)
     def __str__(self):
-        return self.Lang+"-"+str(self.user)
+        return self.Name 
