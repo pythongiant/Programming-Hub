@@ -1,49 +1,14 @@
 {% extends "ProgrammerProfile/base.html" %}
+
 {% block content %}
-
-{%load static%}
-    <style>
-        #start{
-            background-image: url('{% static "python.jpeg" %}');
-        }
-    </style>
-            <div id="start">
-                
-                    <div id="s-text">
-                    <h1>FC Barcelona</h1>
-                    <h5>More than a club.</h5>
-              
-            <div id ="ctrl-panel">
-          
-                <div class="ctrl" id ="one"></div>
-                <div class="ctrl" id ="two"></div>
-                <div class="ctrl" id ="three"></div>
-                <div class="ctrl" id ="four"></div>
-            </div>
-        
-    </div>
-    </div>
-    <script>
-        var block=1;
-        $(document).ready(function(){
-        function magicFunc(tagToEdit,text1,text2){
-            $(tagToEdit).click(function(){
-                
-                $('.ctrl').css('color','gray');
-                $("#s-text").fadeOut(1);
-                $(this).css('color','white');
-                $('#s-text h1').text(text1);
-                $('#s-text h5').text(text2);
-                $("#s-text").fadeIn();
-            });
-        }
-        magicFunc('#one','FC Barcelona','More than a club.')
-        magicFunc('#two','Fixtures','When to watch')
-        magicFunc('#three','Squad','The team')
-        magicFunc('#four','Social','link')
-        });
-            
-            </script>
-
-
-            {% endblock content %}
+    <div id="start"><center><h2>Made for Developers by  Developers</h2>
+        {% if not user.is_authenticated %}
+        <div><a href="/sign"><h3>Sign Up!</h3></a> </div>
+        {% else %}
+        <p></p>
+        {% endif %}
+    </center></div>
+<div class="container">
+    <div class="row"><div class="col-sm-4 "><h3>Connect</h3><p>Get to know more programmers.</p></div><div class="col-sm-4 "><h3>Increase </h3><p>Increase your knowledge by talking to Programmers who programmer in the language you love</p></div><div class="col-sm-4"><h3>Show Off </h3><p>Show off your new Projects  </p></div></div>
+</div>
+{% endblock content %}

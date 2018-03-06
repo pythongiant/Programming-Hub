@@ -1,35 +1,49 @@
-  <!doctype html>
+{% load staticfiles %}
 <html>
-    <head>
-        <link rel = "icon" href ="barca.png">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:500" rel="stylesheet">     
+<head>
+    <meta charset="">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        {%load staticfiles%}
-      <!---->
+    <style>
+        #logo{
+        width:30px;
+        height:30px;
+        }
+    </style>
+        {% load staticfiles %}
+    <title>ProgrammerProfile - Linkedin but for programmers </title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="{% static 'style.css' %}">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-            <title>FC Barcelona</title>
-    
-
-    
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-    <body>
-        <div id ="navbar">
-            <ul >
-                    {%load static%}
-                <li><a href="/"><img style="height:24%;width:90px;"src="{% static 'barca.png' %}"/></a></li>
+<body>
 
-            <li><a href="/"><h2>FC Barcelona</h2></a></li>
-            <li> <a href="/home">Home</a></li>
-            {% if not user.is_authenticated %}
-                <li><a href="/sign"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            {% else %}
-                <li><a href="/userlogout">not ,{{ request.user.username }},logout</a></li>
-                <li><a href={% url 'PostForm' %}>Post</a>
-            {% endif %}
-            </ul>
-            </div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+        <a class="navbar-brand" href="/"><img id ="logo" src="{%static 'Logo.jpg'%}"/></a>
+
+      <a class="navbar-brand" href="/">Programming Hub</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/home">Home</a></li>
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        {% if not user.is_authenticated %}
+      <li><a href="/sign"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        {% else %}
+        <li><a href="/userlogout">not ,{{ request.user.username }},logout</a></li>
+        {% endif %}
+    </ul>
+  </div>
+</nav>
+
     {% block content %}{% endblock content %}
 </body>
 </html>

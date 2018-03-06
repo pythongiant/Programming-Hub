@@ -1,4 +1,5 @@
 from django.contrib import admin
-from .models import Person,Posts
+from .models import Person,Language
+
 admin.site.register(Person)
-admin.site.register(Posts)
+admin.site.register(Language)

@@ -4,17 +4,16 @@
 
     {%load static %}
     <img src="{% static 'uploaded-files/'%}{{person.ProfilePic}}"/>
-    <table class="table"><tr><td><strong>Name: </strong></td><td>{{person.Name}}</td></tr>
+    <table class="table"><tr><td><strong>Name:</strong></td><td>{{person.Name}}</td></tr>
 
-    <tr><td><strong>About {{person.Name}} : </strong></td><td> {{person.Description}}</td></tr>
-        
-        
+    <tr><td><strong>About {{person.Name}}:</strong></td><td> {{person.Description}}</td></tr>
+        <tr><td><strong>Languages {{person.Name}} codes in :</strong></td>
+            <td>
+                {% for i in language %}
+                    {{i.Lang}}
+                {% endfor %}
+    </td>
+        </tr>
     </table>
-    <br>
-    <h3> Articles Written by {{person.Name}}</h3>
-    <br>
-    {%for i in article%}
-        <h4><a style="color:black; text-decoration:none;" href="Posts/{{i.id}}">{{i}}</a></h4>
-{%endfor%}
 </center>
 {% endblock %}

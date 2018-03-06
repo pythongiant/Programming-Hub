@@ -1,23 +1,8 @@
 {% extends "ProgrammerProfile/base.html" %}
 {% block content %}
 
-{%load static%}
-<div id ="users">
-<center><h1>Say Hello!</h1></center>
-<center><p>Welome to the Fun Zone</p></center>
-<br>
-
 {% for i in everybody %}
-
-
-    
-<div id ="user"><a style="text-decoration: none;color:black;" href="/{{i.id}}"><img id= "avatar" src="{%static '/uploaded-files/' %}{{i.ProfilePic}}"/></a><br/>
-<a style="text-decoration: none;color:black;" href="/{{i.id}}"><div class="nametag"> {{i.Name}}</div></a><div id="about"> {{i.Description}}</div>
-</div>
-
-
-
+{%load static%}
+<a href="/{{i.id}}"><img src="{%static '/uploaded-files/' %}{{i.ProfilePic}}"/><div class="nametag">{{i.Name}}<div id="about">{{i.Description}}</div></div></a>
 {% endfor %}
-
-</div>
 {% endblock %}

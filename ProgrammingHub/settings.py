@@ -78,10 +78,8 @@ WSGI_APPLICATION = 'ProgrammingHub.wsgi.application'
 
 
 DATABASES = {
-     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    'default': dj_database_url.config(default='postgres://miiqkabjuaptnb:efd0065d22ac0a5fb6986edc79713c2c2407f01fa831ab99bd2f741edd8cbd2a@ec2-54-83-205-71.compute-1.amazonaws.com:5432/da7532q878cimr'),
+
 }
 
 
@@ -127,9 +125,9 @@ CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "assets"),
+    os.path.join(BASE_DIR, "static"),
 )
 
 STATIC_URL = BASE_DIR+'/static/'
 MEDIA_ROOT=BASE_DIR+"/assets/uploaded-files"
-STATIC_ROOT=BASE_DIR+'/static/'
+STATIC_ROOT=BASE_DIR+'/assets/'
